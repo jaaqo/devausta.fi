@@ -6,17 +6,19 @@ import { Image } from "@astrojs/image/components";
 
 <Layout title="Welcome to Astro.">
   <section class="my-20 sm:my-36 flex">
-    <div class="flex-[0_0_50%]">
-      <h1 class="text-6xl sm:text-8xl my-8">Full-stack kehitystä ilman turhuuksia</h1>
+    <div class="sm:flex-[0_0_70%]">
+      <h1 class="text-6xl sm:text-8xl my-8">
+        Full-stack kehitystä ilman turhuuksia
+      </h1>
       <p class="text-3xl sm:text-4xl my-8">
         Tarjoan pragmaattista, laadukasta ja käyttäjälähtöistä
-        ohjelmistokehityskonsultointia vähintään vuoden mittaisiin projekteihin.
+        ohjelmistokehityskonsultointia freelancerina vähintään vuoden mittaisiin projekteihin.
       </p>
-      <Button to="#details">Minkä tyyppistä konsultointia?</Button>
+      <Button to="#details">Heilutteletko vain käsiäsi?</Button>
     </div>
   </section>
   <section id="details" class="my-20 sm:my-52 flex flex-col md:flex-row">
-    <div class="flex flex-[0_0_50%] justify-center align-center">
+    <div class="flex sm:flex-[0_0_50%] justify-center content-center">
       <Image
         alt="Images of technologies I use"
         src={import("../assets/placeholder.png") as any}
@@ -24,12 +26,121 @@ import { Image } from "@astrojs/image/components";
         height={200}
       />
     </div>
-    <div class="flex-[0_0_50%]">
-      <p class="text-4xl my-8">
-        Tarjoan pragmaattista, laadukasta ja käyttäjälähtöistä
-        ohjelmistokehityskonsultointia vähintään vuoden mittaisiin projekteihin.
+    <div class="sm:flex-[0_0_50%]">
+      <h2 class="text-6xl my-8">Mitä saatte</h2>
+      <ul class="list-disc text-2xl list-inside">
+        <li class="my-2">
+          Ohjelmointia useilla kielillä kuten Javascript, Java ja Python.
+        </li>
+        <li class="my-2">
+          Ratkaisut sekä käyttöliittymään että taustapalveluihin
+          tietokantoineen.
+        </li>
+        <li class="my-2">
+          Toimintamalleja ja ratkaisuja versionhallinnasta ajoympäristöön.
+        </li>
+        <li class="my-2">
+          Hands-on sovellusarkkitehtuurinäkemystä mikropalveluista ja
+          monoliiteistä.
+        </li>
+        <li class="my-2">
+          Käytännönläheistä ja arvonluontiin keskittyvää projektinhallintaa ja
+          suunnittelua.
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="faq" class="my-20 sm:my-52 flex">
+    <div class="sm:flex-[0_0_60%] mx-auto">
+      <h2 class="text-6xl my-8">UKK</h2>
+      <details class="my-4">
+        <summary class="text-3xl">Paljonko laskutat?</summary>
+        <div class="sm:ml-6">
+          <p class="text-xl py-4">
+            Teen ainoastaan tuntilaskutukseen perustuvaa konsultointia
+            markkinahintaan. Markkinoilla tavallisesti liikutaan 85-120€/h
+            hinnoissa.
+          </p>
+        </div>
+      </details>
+      <details class="my-4">
+        <summary class="text-3xl"
+          >Miksi osallistut vain yli vuoden mittaisiin projekteihin?</summary
+        >
+        <div class="sm:ml-6">
+          <p class="text-xl py-4">
+            Alle vuoden mittaiset projektit ohjelmistokehityksessä ovat
+            tyypillisemmin pieniä proof-of-concept hankkeita tai pienempiä
+            siirtymä/päivitys-hankkeita, joista en ole kiinnostunut. Minusta saa
+            paremman tuoton osana tiimiä toteuttamassa isompia ja pidempiä
+            projekteja. Ei tarvitse olla kokoajan toinen silmä auki sitä
+            seuraavaa hanketta varten.
+          </p>
+        </div>
+      </details>
+      <details class="my-4">
+        <summary class="text-3xl">Oletko nyt vapaana?</summary>
+        <div class="sm:ml-6">
+          <p class="text-xl py-4">
+            Olen lähtökohtaisesti aina jossakin hankkeessa mukana. Ota yhteyttä
+            ja katsotaan osuisiko ajatuksemme ja ajankohdat yhteen.
+          </p>
+        </div>
+      </details>
+      <details class="my-4">
+        <summary class="text-3xl">Kävisikö työsuhde?</summary>
+        <div class="sm:ml-6">
+          <p class="text-xl py-4">
+            Ei. En halua nimikko-oluita tai pallomerta. En myöskään tarvitse
+            pöytäjalkapalloa tai muitakaan etuuksia. Teen työajalla sitä missä
+            olen erinomainen ja työajan jälkeen jotain ihan muuta.
+          </p>
+          <p class="text-xl py-4">
+            Jos kuitenkin kaiken tähän asti lukemasi jälkeen olet edelleen sitä
+            mieltä, että sinun tarjouksesi on vastustamaton minulle, ota
+            yhteyttä.
+          </p>
+        </div>
+      </details>
+      <details class="my-4">
+        <summary class="text-3xl">Etsitkö työntekijöitä?</summary>
+        <div class="sm:ml-6">
+          <p class="text-xl py-4">
+            Tällä hetkellä ei ole aikeissa laajentaa liiketoimintaa useammilla
+            käsipareilla.
+          </p>
+        </div>
+      </details>
+    </div>
+  </section>
+  <section id="about-me" class="my-20 sm:my-52 flex flex-col md:flex-row">
+    <div class="sm:flex-[0_0_50%]">
+      <h2 class="text-6xl my-8">Minusta</h2>
+      <p class="text-xl my-2">
+        Aloitin käyttöliittymäpuoleen keskittyvänä koodarina ja kymmenen
+        vuotisen työurani aikana laajentanut osaamistani kattamaan koko
+        tyypillisen webbisovelluksen teknologiapinon tietokantoihin asti.
       </p>
-      <Button to="#details">Minkä tyyppistä konsultointia?</Button>
+      <p class="text-xl my-2">
+        Olen nähnyt monenlaisia projekteja yksityisellä ja julkisella sektorilla.
+        Moni projektikokonaisuus hukkuu lukuisten eri konsulttien
+        käsienheiluttelun jälkeen vääjäämättä ylisuuriin lupauksiin ja
+        odotuksiin. Usein matkalla on ehtinyt jo unohtua se mitä alunperin
+        haluttiin ratkaista. Minun suurin motivaattori on luoda asiakkaalle
+        jotain, mikä parantaa heidän tehokkuuttaan tai tulostaan mahdollisimman
+        <i>yksinkertaisesti</i> ja <i>luotettavasti</i>.
+      </p>
+      <p class="text-xl my-2">
+        Olen se <i>tolkun ääni tiimissä</i>. Yritän ymmärtää liiketoiminnan tavoitteet ja kuluttajan intressit. Olen rehellinen realisti, en lupaa mahdottomia.
+      </p>
+    </div>
+    <div class="flex sm:flex-[0_0_50%] justify-center align-center">
+      <Image
+        alt="Images of technologies I use"
+        src={import("../assets/placeholder.png") as any}
+        width={300}
+        height={200}
+      />
     </div>
   </section>
 </Layout>

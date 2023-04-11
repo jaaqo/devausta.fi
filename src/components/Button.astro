@@ -1,9 +1,12 @@
 ---
 export interface Props {
   to: string;
+  class?: string;
 }
 
-const { to } = Astro.props;
+const props = Astro.props;
 ---
 
-<a href={to} class="bg-gray-800 text-white px-5 py-3 rounded inline-block"><slot /></a>
+<a href={props.to} class={`bg-gray-800 text-white px-5 py-3 rounded inline-block ${props.class}`}>
+  <slot />
+</a>

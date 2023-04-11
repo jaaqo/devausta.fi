@@ -20,8 +20,8 @@ const { title } = Astro.props;
   </head>
   <body>
     <header class="container mx-auto">
-      <nav class="flex justify-between py-5">
-        <a href="/" class="flex">
+      <nav class="flex flex-col sm:flex-row items-center sm:justify-between py-5">
+        <a href="/" class="flex center">
           <Image
             src={import("../assets/logo.svg") as any}
             alt="Company logo"
@@ -29,7 +29,7 @@ const { title } = Astro.props;
             height={5 * 5}
           />
         </a>
-        <Button to="#contact">Ota yhteyttä</Button>
+        <Button class="hidden sm:inline-block" to="#contact">Ota yhteyttä</Button>
       </nav>
     </header>
     <main class="container mx-auto">

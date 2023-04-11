@@ -11,7 +11,7 @@ module.exports = {
           xl: '1280px',
         },
         center: true,
-        padding: "2rem"
+        padding: "1rem"
       }
     },
 	},
