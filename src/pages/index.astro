@@ -1,146 +1,145 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
-import { Image } from "@astrojs/image/components";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Devausta">
   <section class="my-20 sm:my-36 flex">
-    <div class="sm:flex-[0_0_70%]">
+    <div class="sm:flex-[0_0_80%]">
       <h1 class="text-6xl sm:text-8xl my-8">
         Full-stack kehitystä ilman turhuuksia
       </h1>
       <p class="text-3xl sm:text-4xl my-8">
         Tarjoan pragmaattista, laadukasta ja käyttäjälähtöistä
-        ohjelmistokehityskonsultointia freelancerina vähintään vuoden mittaisiin projekteihin.
+        ohjelmistokehityskonsultointia freelancerina vähintään vuoden mittaisiin
+        projekteihin.
       </p>
-      <Button to="#details">Heilutteletko vain käsiäsi?</Button>
+      <Button to="#details">Lue lisää</Button>
     </div>
   </section>
-  <section id="details" class="my-20 sm:my-52 flex flex-col md:flex-row">
-    <div class="flex sm:flex-[0_0_50%] justify-center content-center">
-      <Image
-        alt="Images of technologies I use"
-        src={import("../assets/placeholder.png") as any}
-        width={300}
-        height={200}
-      />
-    </div>
-    <div class="sm:flex-[0_0_50%]">
-      <h2 class="text-6xl my-8">Mitä saatte</h2>
-      <ul class="list-disc text-2xl list-inside">
-        <li class="my-2">
-          Ohjelmointia useilla kielillä kuten Javascript, Java ja Python.
-        </li>
-        <li class="my-2">
-          Ratkaisut sekä käyttöliittymään että taustapalveluihin
-          tietokantoineen.
-        </li>
-        <li class="my-2">
-          Toimintamalleja ja ratkaisuja versionhallinnasta ajoympäristöön.
-        </li>
-        <li class="my-2">
-          Hands-on sovellusarkkitehtuurinäkemystä mikropalveluista ja
-          monoliiteistä.
-        </li>
-        <li class="my-2">
-          Käytännönläheistä ja arvonluontiin keskittyvää projektinhallintaa ja
-          suunnittelua.
-        </li>
-      </ul>
-    </div>
+  <section id="details" class="my-20 sm:my-52 flex flex-col">
+    <h2 class="text-6xl my-8">Monipuolista osaamista</h2>
+    <ul class="list-disc text-2xl list-inside">
+      <li class="my-3">
+        Ohjelmointia useilla teknologioilla kuten JavaScript, TypeScript,
+        NodeJS, Java, Kotlin ja Python.
+      </li>
+      <li class="my-3">
+        Ratkaisut kaikissa kerroksissa: niin käyttöliittymään kuin
+        taustapalveluihin tietokantoineen.
+      </li>
+      <li class="my-3">
+        Toimintamalleja ja toteutuksia versionhallinnasta ajoympäristöön asti.
+      </li>
+      <li class="my-3">
+        "Hands-on" sovellusarkkitehtuurinäkemystä mikropalveluista ja
+        monoliiteistä.
+      </li>
+      <li class="my-3">
+        Käytännönläheistä ja arvonluontiin keskittyvää projektinhallintaa ja
+        suunnittelua.
+      </li>
+    </ul>
   </section>
-  <section id="faq" class="my-20 sm:my-52 flex">
-    <div class="sm:flex-[0_0_60%] mx-auto">
-      <h2 class="text-6xl my-8">UKK</h2>
-      <details class="my-4">
-        <summary class="text-3xl">Paljonko laskutat?</summary>
-        <div class="sm:ml-6">
-          <p class="text-xl py-4">
-            Teen ainoastaan tuntilaskutukseen perustuvaa konsultointia
-            markkinahintaan. Markkinoilla tavallisesti liikutaan 85-120€/h
-            hinnoissa.
-          </p>
-        </div>
-      </details>
-      <details class="my-4">
-        <summary class="text-3xl"
-          >Miksi osallistut vain yli vuoden mittaisiin projekteihin?</summary
-        >
-        <div class="sm:ml-6">
-          <p class="text-xl py-4">
-            Alle vuoden mittaiset projektit ohjelmistokehityksessä ovat
-            tyypillisemmin pieniä proof-of-concept hankkeita tai pienempiä
-            siirtymä/päivitys-hankkeita, joista en ole kiinnostunut. Minusta saa
-            paremman tuoton osana tiimiä toteuttamassa isompia ja pidempiä
-            projekteja. Ei tarvitse olla kokoajan toinen silmä auki sitä
-            seuraavaa hanketta varten.
-          </p>
-        </div>
-      </details>
-      <details class="my-4">
-        <summary class="text-3xl">Oletko nyt vapaana?</summary>
-        <div class="sm:ml-6">
-          <p class="text-xl py-4">
-            Olen lähtökohtaisesti aina jossakin hankkeessa mukana. Ota yhteyttä
-            ja katsotaan osuisiko ajatuksemme ja ajankohdat yhteen.
-          </p>
-        </div>
-      </details>
-      <details class="my-4">
-        <summary class="text-3xl">Kävisikö työsuhde?</summary>
-        <div class="sm:ml-6">
-          <p class="text-xl py-4">
-            Ei. En halua nimikko-oluita tai pallomerta. En myöskään tarvitse
-            pöytäjalkapalloa tai muitakaan etuuksia. Teen työajalla sitä missä
-            olen erinomainen ja työajan jälkeen jotain ihan muuta.
-          </p>
-          <p class="text-xl py-4">
-            Jos kuitenkin kaiken tähän asti lukemasi jälkeen olet edelleen sitä
-            mieltä, että sinun tarjouksesi on vastustamaton minulle, ota
-            yhteyttä.
-          </p>
-        </div>
-      </details>
-      <details class="my-4">
-        <summary class="text-3xl">Etsitkö työntekijöitä?</summary>
-        <div class="sm:ml-6">
-          <p class="text-xl py-4">
-            Tällä hetkellä ei ole aikeissa laajentaa liiketoimintaa useammilla
-            käsipareilla.
-          </p>
-        </div>
-      </details>
-    </div>
+  <section id="faq" class="my-20 sm:my-52 flex flex-col">
+    <h2 class="text-6xl my-8">UKK</h2>
+    <details class="my-4">
+      <summary class="text-3xl"
+        ><h3 class="inline pl-2">Paljonko laskutat?</h3></summary
+      >
+      <div class="sm:ml-6">
+        <p class="text-xl py-4">
+          Teen ainoastaan tuntilaskutukseen perustuvaa konsultointia
+          markkinahintaan. Markkinoilla tavallisesti liikutaan 85-120€/h
+          hinnoissa.
+        </p>
+      </div>
+    </details>
+    <details class="my-4">
+      <summary class="text-3xl"
+        ><h3 class="inline pl-2">
+          Miksi osallistut vain yli vuoden mittaisiin projekteihin?
+        </h3></summary
+      >
+      <div class="sm:ml-6">
+        <p class="text-xl py-4">
+          Alle vuoden mittaiset projektit ohjelmistokehityksessä ovat
+          tyypillisemmin pieniä proof-of-concept hankkeita tai pienempiä
+          siirtymä/päivitys-hankkeita, joista en ole ensisijaisesti
+          kiinnostunut. Minusta saa paremman tuoton osana tiimiä toteuttamassa
+          isompia ja pidempiä projekteja.
+        </p>
+      </div>
+    </details>
+    <details class="my-4">
+      <summary class="text-3xl"
+        ><h3 class="inline pl-2">Oletko nyt vapaana?</h3></summary
+      >
+      <div class="sm:ml-6">
+        <p class="text-xl py-4">
+          Olen lähtökohtaisesti aina jossakin hankkeessa mukana. Ota yhteyttä ja
+          katsotaan osuisiko ajatuksemme ja ajankohdat yhteen.
+        </p>
+      </div>
+    </details>
+    <details class="my-4">
+      <summary class="text-3xl"
+        ><h3 class="inline pl-2">Kävisikö työsuhde?</h3></summary
+      >
+      <div class="sm:ml-6">
+        <p class="text-xl py-4">
+          Ei lähtökohtaisesti*. En halua nimikko-oluita enkä pallomerta. En
+          myöskään tarvitse pöytäjalkapalloa tai muitakaan etuuksia. Teen
+          työajalla sitä missä olen erinomainen ja työajan jälkeen jotain ihan
+          muuta.
+        </p>
+        <p class="text-xl py-4">
+          * Jos kuitenkin kaiken olet edelleen sitä mieltä, että sinulla on
+          jotain kiinnostavaa, ota yhteyttä.
+        </p>
+      </div>
+    </details>
+    <details class="my-4">
+      <summary class="text-3xl"
+        ><h3 class="inline pl-2">Etsitkö työntekijöitä?</h3></summary
+      >
+      <div class="sm:ml-6">
+        <p class="text-xl py-4">
+          Tällä hetkellä ei ole aikeissa laajentaa liiketoimintaa useammilla
+          käsipareilla. Tilanne voi muuttua.
+        </p>
+      </div>
+    </details>
   </section>
-  <section id="about-me" class="my-20 sm:my-52 flex flex-col md:flex-row">
-    <div class="sm:flex-[0_0_50%]">
-      <h2 class="text-6xl my-8">Minusta</h2>
-      <p class="text-xl my-2">
-        Aloitin käyttöliittymäpuoleen keskittyvänä koodarina ja kymmenen
-        vuotisen työurani aikana laajentanut osaamistani kattamaan koko
-        tyypillisen webbisovelluksen teknologiapinon tietokantoihin asti.
-      </p>
-      <p class="text-xl my-2">
-        Olen nähnyt monenlaisia projekteja yksityisellä ja julkisella sektorilla.
-        Moni projektikokonaisuus hukkuu lukuisten eri konsulttien
-        käsienheiluttelun jälkeen vääjäämättä ylisuuriin lupauksiin ja
-        odotuksiin. Usein matkalla on ehtinyt jo unohtua se mitä alunperin
-        haluttiin ratkaista. Minun suurin motivaattori on luoda asiakkaalle
-        jotain, mikä parantaa heidän tehokkuuttaan tai tulostaan mahdollisimman
-        <i>yksinkertaisesti</i> ja <i>luotettavasti</i>.
-      </p>
-      <p class="text-xl my-2">
-        Olen se <i>tolkun ääni tiimissä</i>. Yritän ymmärtää liiketoiminnan tavoitteet ja kuluttajan intressit. Olen rehellinen realisti, en lupaa mahdottomia.
-      </p>
-    </div>
-    <div class="flex sm:flex-[0_0_50%] justify-center align-center">
-      <Image
-        alt="Images of technologies I use"
-        src={import("../assets/placeholder.png") as any}
-        width={300}
-        height={200}
-      />
-    </div>
+  <section id="about-me" class="my-20 sm:my-52 flex flex-col">
+    <h2 class="text-6xl my-8">Minusta</h2>
+    <p class="text-xl my-2">
+      Aloitin käyttöliittymäpuoleen keskittyvänä koodarina ja kymmenen vuotisen
+      työurani aikana laajentanut osaamistani kattamaan koko tyypillisen
+      webbisovelluksen teknologiapinon tietokantoihin asti.
+    </p>
+    <p class="text-xl my-2">
+      Olen nähnyt monenlaisia projekteja yksityisellä ja julkisella sektorilla.
+      Minun suurin motivaattori on luoda asiakkaalle jotain, mikä parantaa
+      heidän tehokkuuttaan tai tulostaan mahdollisimman
+      <i>yksinkertaisesti</i> ja <i>luotettavasti</i>.
+    </p>
+    <p class="text-xl my-2">
+      Olen se <i>tolkun ääni tiimissä</i>. Haluan ymmärtää liiketoiminnan
+      tavoitteet ja kuluttajan intressit. Olen rehellinen realisti, en lupaa
+      mahdottomia enkä halua kenenkään maksavan turhasta.
+    </p>
+  </section>
+  <section id="contact" class="my-20 sm:my-52 flex flex-col">
+    <h2 class="text-6xl my-8">Yhteydenotto</h2>
+    <p class="text-2xl">
+      Lähetä sähköpostia <a href="mailto:contact@devausta.fi" class="underline"
+        >contact@devausta.fi</a
+      >
+      tai viestittele <a
+        href="https://www.linkedin.com/in/jaaqo"
+        class="bold underline">LinkedInissä</a
+      >
+    </p>
   </section>
 </Layout>

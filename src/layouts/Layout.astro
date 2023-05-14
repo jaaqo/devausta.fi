@@ -14,13 +14,18 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <header class="container mx-auto">
-      <nav class="flex flex-col sm:flex-row items-center sm:justify-between py-5">
+      <nav
+        class="flex flex-col sm:flex-row items-center sm:justify-between py-5"
+      >
         <a href="/" class="flex center">
           <Image
             src={import("../assets/logo.svg") as any}
@@ -29,7 +34,9 @@ const { title } = Astro.props;
             height={5 * 5}
           />
         </a>
-        <Button class="hidden sm:inline-block" to="#contact">Ota yhteyttä</Button>
+        <Button class="hidden sm:inline-block" to="#contact">
+          Ota yhteyttä
+        </Button>
       </nav>
     </header>
     <main class="container mx-auto">
